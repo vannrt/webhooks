@@ -3045,16 +3045,17 @@ type PullRequestPayload struct {
 				Href string `json:"href"`
 			} `json:"statuses"`
 		} `json:"_links"`
-		Merged         bool      `json:"merged"`
-		Mergeable      *bool     `json:"mergeable"`
-		MergeableState string    `json:"mergeable_state"`
-		MergedBy       *MergedBy `json:"merged_by"`
-		Comments       int64     `json:"comments"`
-		ReviewComments int64     `json:"review_comments"`
-		Commits        int64     `json:"commits"`
-		Additions      int64     `json:"additions"`
-		Deletions      int64     `json:"deletions"`
-		ChangedFiles   int64     `json:"changed_files"`
+		AuthorAssociation string    `json:"author_association"`
+		Merged            bool      `json:"merged"`
+		Mergeable         *bool     `json:"mergeable"`
+		MergeableState    string    `json:"mergeable_state"`
+		MergedBy          *MergedBy `json:"merged_by"`
+		Comments          int64     `json:"comments"`
+		ReviewComments    int64     `json:"review_comments"`
+		Commits           int64     `json:"commits"`
+		Additions         int64     `json:"additions"`
+		Deletions         int64     `json:"deletions"`
+		ChangedFiles      int64     `json:"changed_files"`
 	} `json:"pull_request"`
 	Label struct {
 		ID      int64  `json:"id"`
